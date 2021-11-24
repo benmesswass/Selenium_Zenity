@@ -1,11 +1,9 @@
-package fr.zeniry.academywass.manager;
+package fr.zenity.academywass.manager;
 
-import fr.zeniry.academywass.Enum.Browser;
-import fr.zeniry.academywass.drivers.DriverFactory;
-import fr.zeniry.academywass.drivers.Drivers;
+import fr.zenity.academywass.Enum.Browser;
+import fr.zenity.academywass.drivers.DriverFactory;
+import fr.zenity.academywass.drivers.Drivers;
 import org.openqa.selenium.WebDriver;
-
-import java.util.Locale;
 
 public class WebDriverManager implements Drivers {
 

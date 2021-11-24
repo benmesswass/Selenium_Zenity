@@ -1,6 +1,6 @@
-package fr.zeniry.academywass.drivers;
+package fr.zenity.academywass.drivers;
 
-import fr.zeniry.academywass.Enum.Browser;
+import fr.zenity.academywass.Enum.Browser;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

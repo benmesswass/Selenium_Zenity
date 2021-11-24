@@ -1,6 +1,6 @@
-package fr.zeniry.academywass.Enum;
+package fr.zenity.academywass.Enum;
 
-import fr.zeniry.academywass.config.Properties;
+import fr.zenity.academywass.config.Properties;
 
 import java.util.Objects;
 

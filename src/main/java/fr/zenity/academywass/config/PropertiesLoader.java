@@ -1,13 +1,10 @@
-package fr.zeniry.academywass.config;
+package fr.zenity.academywass.config;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.Objects;
 import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 
 public class PropertiesLoader {
 

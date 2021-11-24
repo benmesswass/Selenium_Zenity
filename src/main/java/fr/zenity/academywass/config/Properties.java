@@ -1,4 +1,4 @@
-package fr.zeniry.academywass.config;
+package fr.zenity.academywass.config;
 
 public interface Properties {
 

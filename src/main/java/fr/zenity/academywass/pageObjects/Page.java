@@ -1,13 +1,11 @@
-package fr.zeniry.academywass.PageObjects;
+package fr.zenity.academywass.pageObjects;
 
-import fr.zeniry.academywass.manager.WebDriverManager;
-import org.openqa.selenium.JavascriptException;
+import fr.zenity.academywass.manager.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 

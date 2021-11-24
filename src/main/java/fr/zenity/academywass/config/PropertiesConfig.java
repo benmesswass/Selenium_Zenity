@@ -1,7 +1,7 @@
-package fr.zeniry.academywass.config;
+package fr.zenity.academywass.config;
 
-import fr.zeniry.academywass.Enum.Browser;
-import fr.zeniry.academywass.Enum.Urls;
+import fr.zenity.academywass.Enum.Browser;
+import fr.zenity.academywass.Enum.Urls;
 
 
 public class PropertiesConfig {

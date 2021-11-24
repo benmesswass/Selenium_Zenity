@@ -1,6 +1,7 @@
-package fr.zeniry.academywass.PageObjects;
+package fr.zenity.academywass.pageObjects;
 
-import fr.zeniry.academywass.config.Properties;
+import org.testng.Assert;
+import fr.zenity.academywass.config.Properties;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,7 +23,10 @@ public class LoginPage extends Page{
 
     @FindBy(css = "button[class='MuiButtonBase-root MuiButton-root MuiButton-contained jss45 MuiButton-containedPrimary MuiButton-fullWidth']")
     private WebElement loginBtn;
-    s
+
+    @FindBy (css = "button[aria-label='open drawer']")
+    private WebElement openDrawerBtn;
+
 public void NavigateTo(){driver.get(URL);}
 
 public void ClickOnUser(String type){
@@ -44,6 +48,11 @@ public void setPassword(String password){
 
 public void clickOnLogin(){
     clickOn(loginBtn);
+}
+
+public void checkLoginPassed() throws InterruptedException {
+    wait.until(ExpectedConditions.visibilityOf(openDrawerBtn));
+    //Assert.assertTrue(openDrawerBtn.isDisplayed());
 }
 
 }

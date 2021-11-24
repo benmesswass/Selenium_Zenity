@@ -1,4 +1,4 @@
-package fr.zeniry.academywass.drivers;
+package fr.zenity.academywass.drivers;
 
 import org.openqa.selenium.WebDriver;
 

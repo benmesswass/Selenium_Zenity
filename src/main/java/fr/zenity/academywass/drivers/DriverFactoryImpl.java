@@ -1,6 +1,6 @@
-package fr.zeniry.academywass.drivers;
+package fr.zenity.academywass.drivers;
 
-import fr.zeniry.academywass.config.Properties;
+import fr.zenity.academywass.config.Properties;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;

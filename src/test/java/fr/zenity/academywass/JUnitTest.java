@@ -1,7 +1,9 @@
-import fr.zeniry.academywass.Enum.Browser;
-import fr.zeniry.academywass.PageObjects.LoginPage;
-import fr.zeniry.academywass.config.Properties;
-import fr.zeniry.academywass.manager.WebDriverManager;
+package fr.zenity.academywass;
+
+import fr.zenity.academywass.Enum.Browser;
+import fr.zenity.academywass.pageObjects.LoginPage;
+import fr.zenity.academywass.config.Properties;
+import fr.zenity.academywass.manager.WebDriverManager;
 import org.testng.annotations.*;
 
 import java.util.Objects;
