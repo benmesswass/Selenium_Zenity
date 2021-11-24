@@ -1,10 +1,19 @@
 @Login
   Feature: As a Zenity collaborator I want to login so that I could access the intranet
 
-    Scenario Outline: Login with valid credentials
+    Scenario Outline: Login with valid user credentials
       Given user is on the login page
       When  user is logging-in with "<username>" "<password>"
-      Then  he should be at the home page
+      #Then  he should be at the home page
       Examples:
         | username | password |
-        | tester1  | tester1  |
+        | tester1  | tester1 |
+
+
+    Scenario Outline: Login with wrong password
+      Given user is on the login page
+      When  user is logging-in with "<username>" "<password>"
+      Then  he should not be able to go to the home page
+      Examples:
+        | username | password       |
+        | tester1  | wrongPassword  |

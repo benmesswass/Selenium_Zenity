@@ -27,32 +27,42 @@ public class LoginPage extends Page{
     @FindBy (css = "button[aria-label='open drawer']")
     private WebElement openDrawerBtn;
 
+    @FindBy (css = "p[class='MuiFormHelperText-root Mui-error']")
+    private WebElement invalidPasswordMsg;
+
+
 public void NavigateTo(){driver.get(URL);}
 
-public void ClickOnUser(String type){
+public void ClickOnUserType(String type){
     clickOn(userEntrepriseBtn.stream()
             .filter(element -> element.getText().equals(type))
             .findFirst()
             .orElseThrow(()->new RuntimeException("Element "+ type + " not Found")));
 }
 
-public void setLogin(String user){
-    wait.until(ExpectedConditions.visibilityOf(login));
-    login.sendKeys(user);
-}
+    public void setLogin(String user) {
+        wait.until(ExpectedConditions.visibilityOf(login));
+        login.sendKeys(user);
+    }
 
-public void setPassword(String password){
-    wait.until(ExpectedConditions.visibilityOf(passwordInput));
-    passwordInput.sendKeys(password);
-}
+    public void setPassword(String password) {
+        wait.until(ExpectedConditions.visibilityOf(passwordInput));
+        passwordInput.sendKeys(password);
+    }
 
-public void clickOnLogin(){
-    clickOn(loginBtn);
-}
+    public void clickOnLogin() {
+        clickOn(loginBtn);
+    }
 
-public void checkLoginPassed() throws InterruptedException {
-    wait.until(ExpectedConditions.visibilityOf(openDrawerBtn));
-    //Assert.assertTrue(openDrawerBtn.isDisplayed());
-}
+    public void checkLoginPassed() throws InterruptedException {
+        wait.until(ExpectedConditions.visibilityOf(openDrawerBtn));
+        //Assert.assertTrue(openDrawerBtn.isDisplayed());
+    }
+
+    public void checkLoginFailed() throws InterruptedException {
+        wait.until(ExpectedConditions.visibilityOf(invalidPasswordMsg));
+        //String wrongMsg = "Le couple login / mot de passe saisi est incorrect.";
+        //Assert.assertEquals(wrongMsg, invalidPasswordMsg.getText());
+    }
 
 }

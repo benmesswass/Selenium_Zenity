@@ -22,7 +22,7 @@ public class JUnitTest {
     public void test1(){
         LoginPage loginPage = new LoginPage();
         loginPage.NavigateTo();
-        loginPage.ClickOnUser("UTILISATEUR");
+        loginPage.ClickOnUserType("UTILISATEUR");
         loginPage.setLogin("tester1");
         loginPage.setPassword("tester1");
         loginPage.clickOnLogin();
