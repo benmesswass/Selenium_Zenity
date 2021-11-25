@@ -34,7 +34,7 @@ public class LoginSteps implements En {
 
         Then("^he should not be able to go to the home page$", () -> {
             System.out.println("wrong then");
-            //loginPage.checkLoginFailed();
+            loginPage.checkLoginFailed();
         });
     }
 }

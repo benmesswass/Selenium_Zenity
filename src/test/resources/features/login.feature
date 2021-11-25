@@ -4,7 +4,7 @@
     Scenario Outline: Login with valid user credentials
       Given user is on the login page
       When  user is logging-in with "<username>" "<password>"
-      #Then  he should be at the home page
+      Then  he should be at the home page
       Examples:
         | username | password |
         | tester1  | tester1 |
